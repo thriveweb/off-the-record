@@ -228,6 +228,7 @@ Titles
 h1, h2, h3, h4 {
     margin: 0 0 30px;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 h1 {
@@ -272,17 +273,16 @@ input[type="submit"] {
     display: inline-block;
     position: relative;
     padding: 0 30px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     background: #9A2428;
     border: none;
     color: #fff;
     text-transform: uppercase;
     border-radius: 2px;
-    height: 40px;
-    line-height: 40px;
+    height: 44px;
+    line-height: 44px;
     cursor: pointer;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
 }
 
 .button:hover,
@@ -290,8 +290,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-    background: #55AAFF;
-    border-color : #55AAFF;
+    background: #913d40;
+    border-color : #913d40;
     color: #fff;
 }
 
@@ -428,6 +428,57 @@ General
     position: relative;
     z-index: 1;
     padding: 80px 0;
+}
+
+/* Legal Popup */
+.popup-legal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.popup-legal .popup-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(0.5rem);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popup-legal .popup-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.popup-legal img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.popup-legal .button {
+    border: 1px solid #9a2428;
+    color: #9A2428;
+    background: transparent;
+}
+
+.popup-legal .button:hover {
+    background: rgba(154, 36, 40, 0.1);
+}
+
+.popup-legal p {
+    margin: 20px 0 40px 0;
+}
+
+@media (max-width: 768px) {
+    .popup-legal .popup-container {
+        background: white;
+    }
 }
 
 
