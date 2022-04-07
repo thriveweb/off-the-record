@@ -321,7 +321,8 @@ select {
 }
 
 input[type="number"] {
-    padding: 0 0 0 10px;
+    padding: 10px;
+    -moz-appearance: textfield;
 }
 
 input[type="search"] {
@@ -343,6 +344,12 @@ select:focus {
 textarea {
     height: 150px;
     resize: vertical;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 ::-webkit-input-placeholder { color: #666; }
@@ -479,6 +486,46 @@ General
     .popup-legal .popup-container {
         background: white;
     }
+}
+
+/* Age Form */
+.popup-legal .age-form-message {
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.popup-legal .age-form-message.error {
+    color: #9a2428;
+}
+
+.popup-legal .age-form-input-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+}
+
+.popup-legal .age-form select,
+.popup-legal .age-form input {
+    flex: 0 0 calc(33.33333% - 10px);
+    padding: 10px;
+    appearance: none;
+    border-color: #9a2428;
+    text-align: center;
+}
+
+.popup-legal .age-form select:focus,
+.popup-legal .age-form input:focus {
+    border-color: #302E2E;
+}
+
+.popup-legal .age-form select:required:invalid {
+    color: #666;
+}
+
+.popup-legal .age-form select option {
+    color: #302E2E;
 }
 
 

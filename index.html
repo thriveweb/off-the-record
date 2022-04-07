@@ -30,10 +30,7 @@
     <div class="site">
         <div class="container">
             <h1>Shop Off The Record</h1>
-           
-            
             <div><script async="" id="dutchie--embed__script" src="https://dutchie.com/api/v2/embedded-menu/62269e953cdc2300b2ffb303.js"></script></div>
-            
         </div>
     </div>
 
@@ -59,7 +56,29 @@
                 <img src="images/logo.png" title="Off The Record Cannabis" alt="Off The Record Cannabis Logo">
                 <h1>Welcome to Off The Record Cannabis</h1>
                 <p>* I confirm I am 18 years or older, and I request further information about Cannabis from Off The Record Cannabis.</p>
-                <a class="button confirm-legal">Yes, I am 18 years or older *</a>
+                <form class="age-form">
+                    <div class="age-form-message">Enter Date of Birth</div>
+                    <div class="age-form-input-row">
+                        <select name="month" required>
+                            <option value="" disabled selected>MM</option>
+                            <option value="01">Jan</option>
+                            <option value="02">Feb</option>
+                            <option value="03">Mar</option>
+                            <option value="04">Apr</option>
+                            <option value="05">May</option>
+                            <option value="06">Jun</option>
+                            <option value="07">Jul</option>
+                            <option value="08">Aug</option>
+                            <option value="09">Sept</option>
+                            <option value="10">Oct</option>
+                            <option value="11">Nov</option>
+                            <option value="12">Dec</option>
+                        </select>
+                        <input name="day" type="number" max="31" placeholder="DD" required>
+                        <input name="year" type="number" min="1922" max="2022" placeholder="YYYY" required>
+                    </div>
+                    <button type="submit" class="button confirm-legal">Yes, I am 18 years or older *</button>
+                </form>
             </div>
         </div>
     </div>
