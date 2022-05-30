@@ -15,7 +15,7 @@ if (sessionStorage.getItem('popup-legal') != 'shown') {
         let ageFormData = Object.fromEntries(new FormData(ageForm).entries());
 
         const year = ageFormData.year;
-        const month = ageFormData.month;
+        const month = `${ageFormData.month}`.padStart(2, '0');
         const day = `${ageFormData.day}`.padStart(2, '0');
         let date = [year, month, day].join('-');
 

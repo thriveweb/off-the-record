@@ -59,7 +59,8 @@
                 <form class="age-form">
                     <div class="age-form-message">Enter Date of Birth</div>
                     <div class="age-form-input-row">
-                        <select name="month" required>
+                        <input name="month" type="number" min="1" max="12" placeholder="MM" required>
+                        <!-- <select name="month" required>
                             <option value="" disabled selected>MM</option>
                             <option value="01">1</option>
                             <option value="02">2</option>
@@ -73,8 +74,8 @@
                             <option value="10">10</option>
                             <option value="11">11</option>
                             <option value="12">12</option>
-                        </select>
-                        <input name="day" type="number" max="31" placeholder="DD" required>
+                        </select> -->
+                        <input name="day" type="number"min="1" max="31" placeholder="DD" required>
                         <input name="year" type="number" min="1922" max="2022" placeholder="YYYY" required>
                     </div>
                     <button type="submit" class="button confirm-legal">Yes, I am 18 years or older *</button>
