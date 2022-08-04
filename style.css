@@ -414,14 +414,30 @@ Navigation
     align-items: center;
 }
 
-.site-navigation a {
-    font-size: 20px;
+.site-navigation > a {
+    font-size: 16px;
+    margin: 0 0 0 20px;
+}
+
+.site-navigation .header-socials {
+    margin-left: 10px;
+}
+
+.site-navigation .header-socials a {
+    font-size: 18px;
     margin-left: 15px;
     line-height: 1;
 }
 
 .site-navigation a:hover {
     color: #302E2E;
+}
+
+@media (max-width: 420px) {
+    .site-navigation .header-socials {
+        display: none;
+    }
+    
 }
 
 
