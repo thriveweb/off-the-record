@@ -415,15 +415,16 @@ Navigation
 }
 
 .site-navigation > a {
-    font-size: 16px;
-    margin: 0 0 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-.site-navigation .header-socials {
+.site-header .header-socials {
     margin-left: 10px;
 }
 
-.site-navigation .header-socials a {
+.site-header .header-socials a {
     font-size: 18px;
     margin-left: 15px;
     line-height: 1;
@@ -434,7 +435,7 @@ Navigation
 }
 
 @media (max-width: 420px) {
-    .site-navigation .header-socials {
+    .site-header .header-socials {
         display: none;
     }
     
